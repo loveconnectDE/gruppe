@@ -64,7 +64,7 @@
         preload="auto"
       ></video>
      </div>
-     <button class="tg-banner-btn" onclick="window.open('https://safeoffers.pro/a/2k1VPT8RK5c27qy','_blank','noopener')"><span class="btn-fire">🔥</span> Jetzt live <span class="btn-fire btn-fire--right">🔥</span></button>
+
     </div>
     </a>
    </section>
@@ -620,18 +620,18 @@ footer span { color:var(--rose); }
   cursor:pointer;
 }
 .tg-live-badge {
-  position:absolute; top:14px; left:14px; z-index:10;
-  display:flex; align-items:center; gap:6px;
+  position:absolute; top:18px; left:18px; z-index:10;
+  display:flex; align-items:center; gap:10px;
   background:rgba(0,0,0,0.55);
   backdrop-filter:blur(6px);
-  border:1px solid rgba(255,40,40,0.5);
-  border-radius:20px;
-  padding:5px 12px 5px 9px;
+  border:1.5px solid rgba(255,40,40,0.5);
+  border-radius:30px;
+  padding:10px 22px 10px 16px;
 }
 .tg-live-dot {
-  width:8px; height:8px; border-radius:50%;
+  width:14px; height:14px; border-radius:50%;
   background:#ff2828;
-  box-shadow:0 0 6px #ff2828, 0 0 12px rgba(255,40,40,0.6);
+  box-shadow:0 0 8px #ff2828, 0 0 18px rgba(255,40,40,0.6);
   animation:livePulse 1.4s ease-in-out infinite;
   flex-shrink:0;
 }
@@ -641,8 +641,8 @@ footer span { color:var(--rose); }
 }
 .tg-live-text {
   font-family:'DM Mono', monospace;
-  font-size:12px; font-weight:700;
-  color:#ff4444; letter-spacing:1px;
+  font-size:20px; font-weight:700;
+  color:#ff4444; letter-spacing:2px;
   text-transform:lowercase;
 }
 .tg-video-wrap {
@@ -660,40 +660,43 @@ footer span { color:var(--rose); }
   position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
   font-family:'Inter', sans-serif; font-size:24px; font-weight:800;
   padding:22px 72px; border-radius:50px;
-  background:rgba(255,255,255,0.08);
-  backdrop-filter:blur(10px);
-  border:1px solid rgba(255,77,141,0.7);
+  background:transparent;
+  backdrop-filter:none;
+  border:2px solid rgba(255,255,255,0.6);
   color:#fff; cursor:pointer; letter-spacing:-0.3px;
   white-space:nowrap;
   animation:neonPulse 2s ease-in-out infinite;
-  transition:transform 0.2s, background 0.2s;
+  transition:transform 0.2s, border-color 0.2s;
 }
 @keyframes neonPulse {
   0%,100% {
     box-shadow:
-      0 0 6px rgba(255,77,141,0.25),
-      0 0 14px rgba(255,77,141,0.18),
-      0 0 30px rgba(255,77,141,0.12),
-      0 0 60px rgba(255,77,141,0.06);
-    border-color:rgba(255,77,141,0.35);
-    text-shadow:0 0 8px rgba(255,77,141,0.3), 0 0 20px rgba(255,77,141,0.15);
+      0 0 6px rgba(0,0,0,0.5),
+      0 0 14px rgba(0,0,0,0.4),
+      0 0 30px rgba(0,0,0,0.3),
+      0 0 60px rgba(0,0,0,0.2);
+    border-color:rgba(255,255,255,0.5);
+    text-shadow:0 0 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5);
   }
   50% {
     box-shadow:
-      0 0 10px rgba(255,77,141,0.45),
-      0 0 24px rgba(255,77,141,0.3),
-      0 0 50px rgba(255,77,141,0.18),
-      0 0 90px rgba(255,77,141,0.08);
-    border-color:rgba(255,77,141,0.55);
-    text-shadow:0 0 12px rgba(255,77,141,0.45), 0 0 30px rgba(255,77,141,0.2);
+      0 0 10px rgba(0,0,0,0.7),
+      0 0 24px rgba(0,0,0,0.55),
+      0 0 50px rgba(0,0,0,0.4),
+      0 0 90px rgba(0,0,0,0.25);
+    border-color:rgba(255,255,255,0.75);
+    text-shadow:0 0 12px rgba(0,0,0,0.9), 0 0 30px rgba(0,0,0,0.6);
   }
 }
 .tg-banner-btn:hover {
   transform:translate(-50%,-50%) scale(1.06);
-  background:rgba(255,77,141,0.18);
+  border-color:rgba(255,255,255,0.95);
 }
 @media(max-width:600px){
   .tg-banner-btn { font-size:13px; padding:12px 32px; border-radius:30px; }
+  .tg-live-badge { top:10px; left:10px; gap:6px; padding:6px 12px 6px 10px; border-radius:20px; }
+  .tg-live-dot   { width:8px; height:8px; }
+  .tg-live-text  { font-size:12px; letter-spacing:1px; }
 }
 
 /* ── ADD GROUP BANNER ── */
